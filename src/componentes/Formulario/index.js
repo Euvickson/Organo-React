@@ -11,8 +11,8 @@ const Formulario = (props) => {
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [id, setId] = useState(uuidv4())
-    const [time, setTime] = useState('')
     const [favorito, setFavorito] = useState('')
+    const [time, setTime] = useState('')
     const [nomeTime, setNomeTime] = useState('')
     const [corTime, setCorTime] = useState('')
     
@@ -29,7 +29,7 @@ const Formulario = (props) => {
         setNome('')
         setCargo('')
         setImagem('')
-        setId('')
+        setId(uuidv4())
         setFavorito(false)
         setTime('')
     }
