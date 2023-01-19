@@ -12,6 +12,7 @@ const Formulario = (props) => {
     const [imagem, setImagem] = useState('')
     const [id, setId] = useState(uuidv4())
     const [time, setTime] = useState('')
+    const [favorito, setFavorito] = useState('')
     const [nomeTime, setNomeTime] = useState('')
     const [corTime, setCorTime] = useState('')
     
@@ -22,12 +23,14 @@ const Formulario = (props) => {
             cargo,
             imagem,
             id,
+            favorito,
             time
         })
         setNome('')
         setCargo('')
         setImagem('')
         setId('')
+        setFavorito(false)
         setTime('')
     }
 

@@ -16,10 +16,7 @@ const Colaborador = ({nome, cargo, imagem, corDeFundo, id, favorito, aoDeletar, 
                 <h4>{nome}</h4>
                 <h5>{cargo}</h5>
                 <div className='favoritar'>
-                    {favorito 
-                        ? <AiFillHeart size={25} onClick={favoritar}/> 
-                        : <AiOutlineHeart size={25} onClick={favoritar}/>
-                    }
+                    {favorito ? <AiFillHeart size={25} onClick={favoritar}/> : <AiOutlineHeart size={25} onClick={favoritar}/>}
                 </div> 
             </div>
         </div>
